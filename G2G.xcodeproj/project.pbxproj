@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		514B86143C8B3AA6255B133E /* Pods_G2G.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 04EDD0A2A6825F068CDEBBC0 /* Pods_G2G.framework */; };
 		B832F18E2935835900B0BFEA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832F18D2935835900B0BFEA /* AppDelegate.swift */; };
 		B832F1902935835900B0BFEA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832F18F2935835900B0BFEA /* SceneDelegate.swift */; };
 		B832F1922935835900B0BFEA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B832F1912935835900B0BFEA /* ViewController.swift */; };
@@ -14,9 +15,14 @@
 		B832F1972935835A00B0BFEA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B832F1962935835A00B0BFEA /* Assets.xcassets */; };
 		B832F19A2935835A00B0BFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832F1982935835A00B0BFEA /* LaunchScreen.storyboard */; };
 		B87E156D293FA20B00849646 /* WebAPI.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B87E156C293FA20B00849646 /* WebAPI.rtf */; };
+		B89A5C2929450BC8009C4943 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89A5C2829450BC8009C4943 /* PaymentViewController.swift */; };
+		B89A5C2B29450ECD009C4943 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89A5C2A29450ECD009C4943 /* PaymentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		04EDD0A2A6825F068CDEBBC0 /* Pods_G2G.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_G2G.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1B0F6CB592C2FE11FAAD01FB /* Pods-G2G.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G2G.release.xcconfig"; path = "Target Support Files/Pods-G2G/Pods-G2G.release.xcconfig"; sourceTree = "<group>"; };
+		4FC54B4EABE207275F318385 /* Pods-G2G.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-G2G.debug.xcconfig"; path = "Target Support Files/Pods-G2G/Pods-G2G.debug.xcconfig"; sourceTree = "<group>"; };
 		B832F18A2935835900B0BFEA /* G2G.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = G2G.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B832F18D2935835900B0BFEA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B832F18F2935835900B0BFEA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -26,6 +32,8 @@
 		B832F1992935835A00B0BFEA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B832F19B2935835A00B0BFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B87E156C293FA20B00849646 /* WebAPI.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = WebAPI.rtf; sourceTree = "<group>"; };
+		B89A5C2829450BC8009C4943 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		B89A5C2A29450ECD009C4943 /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,17 +41,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				514B86143C8B3AA6255B133E /* Pods_G2G.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		43D1E209DE787D89BF9BC95E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				4FC54B4EABE207275F318385 /* Pods-G2G.debug.xcconfig */,
+				1B0F6CB592C2FE11FAAD01FB /* Pods-G2G.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B832F1812935835900B0BFEA = {
 			isa = PBXGroup;
 			children = (
 				B832F18C2935835900B0BFEA /* G2G */,
 				B832F18B2935835900B0BFEA /* Products */,
+				43D1E209DE787D89BF9BC95E /* Pods */,
+				B9E1C1E00C51C295B4666F12 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -62,12 +82,22 @@
 				B832F18F2935835900B0BFEA /* SceneDelegate.swift */,
 				B832F1912935835900B0BFEA /* ViewController.swift */,
 				B832F1932935835900B0BFEA /* Main.storyboard */,
+				B89A5C2A29450ECD009C4943 /* PaymentsViewController.swift */,
+				B89A5C2829450BC8009C4943 /* PaymentViewController.swift */,
 				B87E156C293FA20B00849646 /* WebAPI.rtf */,
 				B832F1962935835A00B0BFEA /* Assets.xcassets */,
 				B832F1982935835A00B0BFEA /* LaunchScreen.storyboard */,
 				B832F19B2935835A00B0BFEA /* Info.plist */,
 			);
 			path = G2G;
+			sourceTree = "<group>";
+		};
+		B9E1C1E00C51C295B4666F12 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				04EDD0A2A6825F068CDEBBC0 /* Pods_G2G.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -77,9 +107,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B832F19E2935835A00B0BFEA /* Build configuration list for PBXNativeTarget "G2G" */;
 			buildPhases = (
+				579E7600D00EB37AB795FB9A /* [CP] Check Pods Manifest.lock */,
 				B832F1862935835900B0BFEA /* Sources */,
 				B832F1872935835900B0BFEA /* Frameworks */,
 				B832F1882935835900B0BFEA /* Resources */,
+				B488B4C79FFBEF07F41F1238 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -137,14 +169,58 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		579E7600D00EB37AB795FB9A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-G2G-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B488B4C79FFBEF07F41F1238 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-G2G/Pods-G2G-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-G2G/Pods-G2G-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-G2G/Pods-G2G-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B832F1862935835900B0BFEA /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B89A5C2B29450ECD009C4943 /* PaymentsViewController.swift in Sources */,
 				B832F1922935835900B0BFEA /* ViewController.swift in Sources */,
 				B832F18E2935835900B0BFEA /* AppDelegate.swift in Sources */,
 				B832F1902935835900B0BFEA /* SceneDelegate.swift in Sources */,
+				B89A5C2929450BC8009C4943 /* PaymentViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -286,6 +362,7 @@
 		};
 		B832F19F2935835A00B0BFEA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FC54B4EABE207275F318385 /* Pods-G2G.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -303,7 +380,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Mena-Abdelmalak.G2G";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mena.G2G;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -313,6 +390,7 @@
 		};
 		B832F1A02935835A00B0BFEA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1B0F6CB592C2FE11FAAD01FB /* Pods-G2G.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -330,7 +408,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "Mena-Abdelmalak.G2G";
+				PRODUCT_BUNDLE_IDENTIFIER = com.Mena.G2G;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;

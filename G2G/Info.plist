@@ -8,10 +8,10 @@
 			<key>CFBundleTypeRole</key>
 			<string>Editor</string>
 			<key>CFBundleURLName</key>
-			<string>Mena-Abdelmalak.G2G</string>
+			<string>com.Mena.G2G</string>
 			<key>CFBundleURLSchemes</key>
 			<array>
-				<string>Mena-Abdelmalak.G2G.payments</string>
+				<string>com.Mena.G2G.payments</string>
 			</array>
 		</dict>
 	</array>

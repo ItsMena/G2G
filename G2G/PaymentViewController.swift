@@ -58,7 +58,7 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
     }
     
     
-    func showDropIn(clientTokenOrTokenizationKey: String) {
+   /* func showDropIn(clientTokenOrTokenizationKey: String) {
         let request =  BTDropInRequest()
         let dropIn = BTDropInController(authorization: clientTokenOrTokenizationKey, request: request)
         { (controller, result, error) in
@@ -77,7 +77,8 @@ class PaymentViewController: UIViewController, UITextFieldDelegate {
             controller.dismiss(animated: true, completion: nil)
         }
         self.present(dropIn!, animated: true, completion: nil)
-    }
+
+    }*/
     
    
     }

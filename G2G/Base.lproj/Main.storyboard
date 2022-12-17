@@ -40,7 +40,7 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5va-bn-h21" secondAttribute="trailing" constant="20" id="0mW-Wg-SjI"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5va-bn-h21" secondAttribute="trailing" constant="20" id="0y0-YC-x8M"/>
                             <constraint firstItem="4jf-Lo-tHf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="4CO-cL-D0d"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="4jf-Lo-tHf" secondAttribute="trailing" constant="20" id="4Ov-Uc-HWH"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vHi-LG-a6H" secondAttribute="trailing" constant="140" id="Hfx-yv-9Qy"/>
@@ -50,6 +50,7 @@
                             <constraint firstItem="4jf-Lo-tHf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="400" id="kvH-v5-e3N"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="l3R-rG-4pN" secondAttribute="trailing" constant="20" id="o2V-g9-glu"/>
                             <constraint firstItem="l3R-rG-4pN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="ozG-eu-U2b"/>
+                            <constraint firstItem="5va-bn-h21" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="344" id="tRR-Sz-ekZ"/>
                             <constraint firstItem="vHi-LG-a6H" firstAttribute="top" secondItem="4jf-Lo-tHf" secondAttribute="bottom" constant="50" id="vgd-bW-zoA"/>
                         </constraints>
                     </view>
@@ -134,22 +135,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3wN-dZ-oF2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2200" y="138.61607142857142"/>
-        </scene>
-        <!--Payments View Controller-->
-        <scene sceneID="ePF-IY-x0X">
-            <objects>
-                <viewController id="84v-1i-Xvj" customClass="PaymentsViewController" customModule="G2G" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="pqZ-ub-Szg" customClass="P">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="3PD-6m-yJq"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="zEg-XN-bw6"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bRq-jM-SXH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2991" y="139"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="0wf-Vu-ufo">

@@ -18,32 +18,36 @@ class ViewController: UIViewController {
     @IBOutlet var percentBar: UIProgressView!
     
    
-    var amountGoal=Float(5000)
-    var amountPaid=Float(0)
-    var calculation=Float(0)
+    var amountGoal:Float=5000
+    var amountPaid:Float=0
+    let defaults=UserDefaults.standard
+    var calculation:Float=0
+    
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        notificationCenter.addObserver(self, selector: #selector(updatePercent), name: NSNotification.Name("paymentProcessed"), object: nil)
-        percentBar.setProgress(0, animated: true)
+        savedPercent()// Show Progress Bar and label with saved data
+        notificationCenter.addObserver(self, selector: #selector(updatePercent), name: NSNotification.Name("paymentProcessed"), object: nil)//recieves requests of payments
         
+    }
+    func savedPercent(){
+        let saved=defaults.float(forKey: "SavedCalculation1")
+        let roundedSaved=round(saved*100)/100
+        percentBar.setProgress(roundedSaved/100, animated: true)
+        percentComplete.text!="\(roundedSaved) %"
     }
     
     @objc func updatePercent(_ notification:NSNotification){
         let text=notification.object as! String?
         let textConversion=NumberFormatter().number(from: text!)!.floatValue
         amountPaid=amountPaid+textConversion
+        defaults.set(calculation,forKey:"SavedCalculation1")
         calculation=(amountPaid/amountGoal)*100
-        percentBar.setProgress(calculation/100, animated: true)
+        defaults.set(calculation,forKey: "SavedCalculation1")
+        savedPercent()
         print(calculation)
-        percentComplete.text!="\(calculation) %"
         
-     //   amountPaid=amountPaid+(Int(pvc.paymentAmount.text!)
-      //  let totalProgress = Float(amountPaid)/Float(amountGoal)
-       // percentBar.setProgress(totalProgress, animated: true)
-        //let x:String=pvc.paymentAmount.text!
-        //self.percentComplete.text=x
         
     }
     

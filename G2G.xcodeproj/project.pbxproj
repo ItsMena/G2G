@@ -16,7 +16,6 @@
 		B832F19A2935835A00B0BFEA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B832F1982935835A00B0BFEA /* LaunchScreen.storyboard */; };
 		B87E156D293FA20B00849646 /* WebAPI.rtf in Resources */ = {isa = PBXBuildFile; fileRef = B87E156C293FA20B00849646 /* WebAPI.rtf */; };
 		B89A5C2929450BC8009C4943 /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89A5C2829450BC8009C4943 /* PaymentViewController.swift */; };
-		B89A5C2B29450ECD009C4943 /* PaymentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B89A5C2A29450ECD009C4943 /* PaymentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +32,6 @@
 		B832F19B2935835A00B0BFEA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B87E156C293FA20B00849646 /* WebAPI.rtf */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; path = WebAPI.rtf; sourceTree = "<group>"; };
 		B89A5C2829450BC8009C4943 /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
-		B89A5C2A29450ECD009C4943 /* PaymentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,7 +80,6 @@
 				B832F18F2935835900B0BFEA /* SceneDelegate.swift */,
 				B832F1912935835900B0BFEA /* ViewController.swift */,
 				B832F1932935835900B0BFEA /* Main.storyboard */,
-				B89A5C2A29450ECD009C4943 /* PaymentsViewController.swift */,
 				B89A5C2829450BC8009C4943 /* PaymentViewController.swift */,
 				B87E156C293FA20B00849646 /* WebAPI.rtf */,
 				B832F1962935835A00B0BFEA /* Assets.xcassets */,
@@ -216,7 +213,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B89A5C2B29450ECD009C4943 /* PaymentsViewController.swift in Sources */,
 				B832F1922935835900B0BFEA /* ViewController.swift in Sources */,
 				B832F18E2935835900B0BFEA /* AppDelegate.swift in Sources */,
 				B832F1902935835900B0BFEA /* SceneDelegate.swift in Sources */,

@@ -32,7 +32,7 @@ class ViewController: UIViewController {
         
     }
     func savedPercent(){
-        let saved=defaults.float(forKey: "SavedCalculation1")
+        let saved=defaults.float(forKey: "SavedCalculation10")
         let roundedSaved=round(saved*100)/100
         percentBar.setProgress(roundedSaved/100, animated: true)
         percentComplete.text!="\(roundedSaved) %"
@@ -42,9 +42,9 @@ class ViewController: UIViewController {
         let text=notification.object as! String?
         let textConversion=NumberFormatter().number(from: text!)!.floatValue
         amountPaid=amountPaid+textConversion
-        defaults.set(calculation,forKey:"SavedCalculation1")
+        defaults.set(calculation,forKey:"SavedCalculation10")
         calculation=(amountPaid/amountGoal)*100
-        defaults.set(calculation,forKey: "SavedCalculation1")
+        defaults.set(calculation,forKey: "SavedCalculation10")
         savedPercent()
         print(calculation)
         
